@@ -4,10 +4,16 @@ go:
   - 1.11.x
   - 1.12.x
   - 1.13.x
+  - tip
+
+install:
+  - go get golang.org/x/tools/cmd/cover
+  - go get github.com/mattn/goveralls
 
 script:
   - gofmt -d -s .
-  - go test ./...
+  - go test -v -covermode=count -coverprofile=coverage.out
+  - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci -repotoken $COVERALLS_TOKEN
 
 notifications:
   email: false

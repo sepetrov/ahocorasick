@@ -1,6 +1,7 @@
 # ahocorasick
 
 [![Build Status](https://travis-ci.org/sepetrov/ahocorasick.svg?branch=master)](https://travis-ci.org/sepetrov/ahocorasick)
+[![Coverage Status](https://coveralls.io/repos/github/sepetrov/ahocorasick/badge.svg?branch=master)](https://coveralls.io/github/sepetrov/ahocorasick?branch=master) 
 
 A [Golang][1] implementation of the [Aho-Corasick string-searching algorithm][2].
 
