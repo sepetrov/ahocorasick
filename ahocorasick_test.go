@@ -200,7 +200,7 @@ func fprintNode(w io.Writer, n *node, indent int) {
 		fmt.Sprintf("Dict suffix link: %q %p", nodePath(n.dictSuffixLink), n.dictSuffixLink),
 		fmt.Sprintf("Children count: %d", len(n.children)),
 	}
-	for i, _ := range out {
+	for i := range out {
 		out[i] = strings.Repeat(".", indent*4) + out[i]
 	}
 	fmt.Fprintln(w, strings.Join(out, "\n"))
