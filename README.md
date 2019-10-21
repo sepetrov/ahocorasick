@@ -5,6 +5,10 @@
 
 A [Golang][1] implementation of the [Aho-Corasick string-searching algorithm][2].
 
+## Changelog
+
+See [CHANGELOG](CHANGELOG.md).
+
 ## Benchmark
 
 The benchmarks are using dictionaries in different languages and sizes. The test
