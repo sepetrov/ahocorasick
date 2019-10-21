@@ -110,7 +110,7 @@ func readText(lang string, size int) ([]byte, error) {
 	f := filepath.Join("testdata", fmt.Sprintf("text.%s.%dMB.txt", lang, size))
 	b, err := ioutil.ReadFile(f)
 	if err != nil {
-		return nil, fmt.Errorf("read text from %q: %w", f, err)
+		return nil, fmt.Errorf("read text from %q: %s", f, err)
 	}
 	return b, nil
 }
